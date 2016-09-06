@@ -16,9 +16,9 @@ A way to make the exhaustive search algorithm a bit more efficient is to discard
 
     Put [si, fi] with smallest si in X
 
-This results in problems when the interval with the smallest si is very long. Example:
+This results in problems when the interval with the smallest `si` is very long. Example:
 
-    [-------------------]
+    [------------------]
      [-][-][-][-][-][-]
 
 With the above algorithm we would choose the large interval and disregard all the small ones, resulting in a non-optimal solution.

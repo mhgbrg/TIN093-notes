@@ -58,7 +58,7 @@ The formula we developed above is recursive, but we don't want to implement it r
        |- OPT(3) - ...
           |- ...
 
-Just in this small subtree we have to calculate `OPT(3)` three times. We instead want to implement the algorithm iteratively and save the result of each calculated `OPT(j)` in a table.
+Just in this small subtree we have to calculate `OPT(3)` three times, and the algorithm in fact has a time complexity of `O(2^n)` when implemented this way. Instead of doing this we want to implement the algorithm iteratively and save the result of each calculated `OPT(j)` in a table.
 
 | j      | 1 | 2 | 3 | 4 | 5 | 6 |
 |:-------|:--|:--|:--|:--|:--|:--|
